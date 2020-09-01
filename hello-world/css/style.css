@@ -5,3 +5,8 @@
 h1 {
 
 }
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	padding-left: 30px;
+}
