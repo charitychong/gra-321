@@ -2,6 +2,27 @@
 
 }
 
+body {
+	font-family: 'Open Sans', sans-serif;
+	padding-left: 30px;
+}
+
 h1 {
 
+}
+
+.list {
+	list-style-type: none;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: gray;
+}
+
+a:hover {
+  color: orange;
 }
