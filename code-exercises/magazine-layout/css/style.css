@@ -2,6 +2,7 @@ body {
   padding-left: 76px;
   padding-right: 49px;
   padding-bottom: 103px;
+  padding-top: 53px;
 }
 
 h1 {
@@ -52,6 +53,7 @@ p {
 
 div.joviimage {
   background-image: url(../img/bon-jovi.png);
+  background-repeat: no-repeat;
 }
 
 
@@ -68,6 +70,7 @@ div.joviimage {
 
 div.pattyimage {
   background-image: url(../img/patricia-urquiola.png);
+  background-repeat: no-repeat;
   position: relative;
 }
 
