@@ -2,11 +2,16 @@
 
 }
 
-h1 {
-
-}
-
 body {
 	font-family: 'Open Sans', sans-serif;
-	padding-left: 30px;
+	width: 1400px;
+}
+
+.grid {
+	width: 1400px;
+	display: grid;
+	grid-template-columns: 200px 1000px;
+	grid-column-gap: 50px;
+	height: 200px;
+	margin-left: 30px;
 }
