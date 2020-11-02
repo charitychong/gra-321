@@ -359,7 +359,7 @@ input:checked +.specials-lbl-toggle {
 input:checked +.sandwiches-lbl-toggle {
   background-size: 100%;
   background-color: #707070;
-  background-image: url(../img/Sandwich1.jpg);
+  background-image: url(../img/sandwich1.jpg);
   background-position: 0px -170px;
   background-repeat: no-repeat;
   color: #707070;
