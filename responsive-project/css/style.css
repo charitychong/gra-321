@@ -315,7 +315,7 @@ input:checked +.specials-lbl-toggle {
 input:checked +.sandwiches-lbl-toggle {
   background-size: 100%;
   background-color: #707070;
-  background-image: url(../img/sandwich1.jpg);
+  background-image: url(../img/Sandwich1.jpg);
   background-position: 0px -170px;
   background-repeat: no-repeat;
   color: #707070;
@@ -326,7 +326,7 @@ input:checked +.sandwiches-lbl-toggle {
   display: block;
 
   color: #fff;
-  background-image: url(../img/sandwich1.jpg);
+  background-image: url(../img/Sandwich1.jpg);
   background-size: 100%;
   background-position: 0px -170px;
   background-repeat: no-repeat;
@@ -407,7 +407,7 @@ input:checked +.muffins-lbl-toggle {
 input:checked +.premade-lbl-toggle {
   background-size: 360px;
   background-color: #707070;
-  background-image: url(../img/salad2.jpg);
+  background-image: url(../img/Salad2.jpg);
   background-position: 0 --82px;
   background-repeat: no-repeat;
   color: #707070;
@@ -418,7 +418,7 @@ input:checked +.premade-lbl-toggle {
   display: block;
 
   color: #fff;
-  background-image: url(../img/salad2.jpg);
+  background-image: url(../img/Salad2.jpg);
   background-size: 360px;
   background-position: 0 -82px;
   background-repeat: no-repeat;
