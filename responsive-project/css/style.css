@@ -39,11 +39,11 @@ body {
 
 .menu-content {
 	max-height: 0;
-    overflow: hidden;
+  overflow: hidden;
 	font-weight: 700;
 	font-size: 25px;
+  line-height: 35px;
 	color: #707070;
-	text-align: left;
 	padding: 0px 0px 0px 0px;
 }
 
@@ -51,6 +51,7 @@ body {
     background-color: rgb(255, 255, 255, 80%);
     padding: 0px 30px;
     transition: all 0.25s ease-out;
+
 }
 
 .collapsible-menu ul {
@@ -59,29 +60,31 @@ body {
     margin: 0;
     padding-inline-start: 0px;
     float: right;
+    margin-top: 15px;
+    margin-right: 20px;
 }
 
 .collapsible-menu li {
-    list-style-type: none;
-	height: 40px;
+  list-style-type: none;
 	text-align: right;
 }
 
 .collapsible-menu a {
-	width: 20px;
-    display:block;
-    padding: 10px;
-    text-decoration: none;
+  display:block;
+  padding: 10px;
+  text-decoration: none;
+  padding: 0;
 }
 
 .collapsible-menu label {
 	height: 30px;
 	width: 30px;
 	padding-top: 30px;
-    display: block;
-    cursor: pointer;
-    float: right;
+  display: block;
+  cursor: pointer;
+  float: right;
 	background: url(../img/nav-icon.png) no-repeat left center;
+
 }
 
 input#navmenu {
@@ -90,11 +93,14 @@ input#navmenu {
 
 input:checked +.navmenu {
     background-image: url(../img/nav-icon2.png);
+    transition: all 0.25s ease-out;
 }
 
 input:checked ~ .menu-content {
     max-height: 100%;
+    transition: all 0.25s ease-out;
 }
+
 /* Nav End */
 
 
@@ -120,59 +126,9 @@ p {
 	margin-bottom: 0;
 }
 
-.drinks {
-	width: 294px
-	height: 41px;
-	margin-top: 30px;
-}
 
-#tea {
-	width: 100%;
-	height: 150px;
-	color: #fff;
-	border: 0px;
-	background-image: url(../img/Tea1.jpg);
-	background-size: 380px;
-	background-position: -35px -180px;
-	background-repeat: no-repeat;
-	font-family: 'Nunito', sans-serif;
-	font-weight: 700;
-	font-size: 30px;
-	text-align: center;
-	line-height: 150px;
-}
 
-.coffee {
-	width: 100%;
-	height: 150px;
-	color: #fff;
-	border: 0px;
-	background-image: url(../img/coffee1.jpg);
-	background-size: 100%;
-	background-position: 0px -167px;
-	background-repeat: no-repeat;
-	font-family: 'Nunito', sans-serif;
-	font-weight: 700;
-	font-size: 30px;
-	text-align: center;
-	line-height: 150px;
-}
 
-.specials {
-	width: 100%;
-	height: 150px;
-	color: #fff;
-	border: 0px;
-	background-image: url(../img/specials.jpg);
-	background-size: 360px;
-	background-position: 0px -80px;
-	background-repeat: no-repeat;
-	font-family: 'Nunito', sans-serif;
-	font-weight: 700;
-	font-size: 30px;
-	text-align: center;
-	line-height: 150px;
-}
 
 /* Tea Collapsible Menu Buttons */
 
