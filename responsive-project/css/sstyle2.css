@@ -1,27 +1,30 @@
 body {
 	font-family: 'Nunito', sans-serif;
-	width: 320px;
 	color: #fff;
+  margin: 0;
 }
 
 
 .header {
-	height: 560px;
+  width: 100%;
+	min-height: 560px;
+  height: auto;
 	background-image: url(../img/home.jpg);
-	background-position: -60px -100px;
-	background-size: 620px;
+	background-position: -100px -100px;
+	background-size: 150%;
 	color: white;
 	background-repeat: no-repeat;
 	position: relative;
 }
 
 .overlay {
-	width: 320px;
-	height: 175px;
-	margin-top: 385px;
+	width: 100%;
+	min-height: 560px;
+  height: auto;
 	background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 1.0));
 	color: white;
 	position: absolute;
+  display: none;
 }
 
 
@@ -48,9 +51,10 @@ body {
 }
 
 .collapsible-menu {
-    background-color: rgb(255, 255, 255, 80%);
-    padding: 0px 30px;
     transition: all 0.25s ease-out;
+    position: fixed;
+    width: 100%;
+    box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, 0.8);
 }
 
 .collapsible-menu ul {
@@ -69,10 +73,13 @@ body {
 }
 
 .collapsible-menu a {
-  display:block;
-  padding: 10px;
   text-decoration: none;
-  padding: 0;
+  padding: 10px;
+  color: #707070;
+}
+
+.collapsible-menu a:hover {
+  color: black;
 }
 
 .collapsible-menu label {
@@ -81,18 +88,22 @@ body {
 	padding-top: 30px;
   display: block;
   cursor: pointer;
-	background: url(../img/nav-icon.png) no-repeat left center;
-  position: fixed;
   float: right;
+	background: url(../img/nav-icon.png) no-repeat left center;
+  margin-right: 7.5%
+
 }
 
 input#navmenu {
     display: none;
-    right: 20;
-    top: 20;
 }
 
 input:checked +.navmenu {
+    background-image: url(../img/nav-icon2.png);
+    transition: all 0.25s ease-out;
+}
+
+input:checked +.collapsible-menu{
     background-image: url(../img/nav-icon2.png);
     transition: all 0.25s ease-out;
 }
@@ -134,20 +145,23 @@ p {
 /* Tea Collapsible Menu Buttons */
 
 .teacontent {
+  width: 93%;
 	display: grid;
-	grid-template-columns: 240px 40px;
-  	grid-column-gap: 14px;
+	grid-template-columns: 75% 12.5%;
+  	grid-column-gap: 5%;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .subtext {
-	width: 290px;
+	width: 93%;
 	height: 34px;
 	font-family: 'Nunito', sans-serif;	
 	font-weight: 300;
 	font-size: 13px;
 	line-height: 17px;
 	color: #707070;
-	margin: 10px 0 55px 13px;
+	margin: 10px 0 55px 3%;
 }
 
 input[type='checkbox'] {
@@ -155,9 +169,9 @@ input[type='checkbox'] {
 }
 
 input:checked +.tea-lbl-toggle {
-  background-size: 380px;
+  background-size: 100%;
   background-color: #707070;
-  background-position: -35px -180px;
+  background-position: 0 -180px;
   background-repeat: no-repeat;
   background-image: url(../img/tea1.jpg);
   color: #707070;
@@ -169,8 +183,8 @@ input:checked +.tea-lbl-toggle {
 
   color: #fff;
   background-image: url(../img/Tea1.jpg);
-  background-size: 380px;
-  background-position: -35px -180px;
+  background-size: 100%;
+  background-position: 0 -180px;
   background-repeat: no-repeat;
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
@@ -208,10 +222,12 @@ input:checked +.tea-lbl-toggle {
 /* coffee */
 
 .coffeecontent {
+  width: 93%;
 	display: grid;
-	grid-template-columns: 147px 34px 34px 34px;
-  	grid-gap: 25px 15px;
-
+	grid-template-columns: 46% 10% 10% 10%;
+  	grid-gap: 7.8% 5%;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 input:checked +.coffee-lbl-toggle {
@@ -255,22 +271,28 @@ input:checked +.coffee-lbl-toggle {
 /* specials */
 
 .specialscontent {
+  width: 93%;
 	display: grid;
-	grid-template-columns: 162px 32px 32px 32px;
-  	grid-gap: 19px 13px;
+	grid-template-columns: 51% 10% 10% 10%;
+  	grid-gap: 6% 4%;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .specialscontent2 {
+  width: 93%;
 	display: grid;
-	grid-template-columns: 220px 32px;
-  	grid-gap: 42px;
+	grid-template-columns: 70% 10%;
+  	grid-gap: 14%;
+  flex-wrap: wrap;
+  margin: 0 auto;
   	margin-bottom: 50px;
 }
 
 input:checked +.specials-lbl-toggle {
   background-color: #707070;
   background-image: url(../img/specials.jpg);
-  background-size: 360px;
+  background-size: 100%;
   background-position: 0px -80px;
   background-repeat: no-repeat;
   color: #707070;
@@ -282,7 +304,7 @@ input:checked +.specials-lbl-toggle {
 
   color: #fff;
   background-image: url(../img/specials.jpg);
-  background-size: 360px;
+  background-size: 100%;
   background-position: 0px -80px;
   background-repeat: no-repeat;
   font-family: 'Nunito', sans-serif;
@@ -307,9 +329,13 @@ input:checked +.specials-lbl-toggle {
 /* sandwiches */
 
 .sandwichescontent {
+  width: 93%;
+  display: grid;
+  flex-wrap: wrap;
+  margin: 0 auto;
 	display: grid;
-	grid-template-columns: 190px 34px;
-  	grid-gap: 70px;
+	grid-template-columns: 60% 10%;
+  	grid-gap: 22%;
   	margin-bottom: 50px;
 }
 
@@ -353,17 +379,20 @@ input:checked +.sandwiches-lbl-toggle {
 /* muffins */
 
 .muffinscontent {
+  width: 93%;
 	display: grid;
-	grid-template-columns: 190px 34px;
-  	grid-gap: 70px;
-  	margin-bottom: 50px;
+	grid-template-columns: 60% 10%;
+  	grid-gap: 22%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 input:checked +.muffins-lbl-toggle {
-  background-size: 360px;
+  background-size: 100%;
   background-color: #707070;
   background-image: url(../img/Muffins2.jpg);
-  background-position: -35px -280px;
+  background-position: 0 -300px;
   background-repeat: no-repeat;
   color: #707070;
   box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, 0.7)
@@ -374,8 +403,8 @@ input:checked +.muffins-lbl-toggle {
 
   color: #fff;
   background-image: url(../img/Muffins2.jpg);
-  background-size: 360px;
-  background-position: -35px -280px;
+  background-size: 100%;
+  background-position: 0 -300px;
   background-repeat: no-repeat;
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
@@ -399,17 +428,20 @@ input:checked +.muffins-lbl-toggle {
 /* premade */
 
 .premadecontent {
+  width: 93%;
 	display: grid;
-	grid-template-columns: 190px 34px;
-  	grid-gap: 70px;
+	grid-template-columns: 60% 10%;
+  	grid-gap: 22%;
+  flex-wrap: wrap;
+  margin: 0 auto;
   	margin-bottom: 50px;
 }
 
 input:checked +.premade-lbl-toggle {
-  background-size: 360px;
+  background-size: 100%;
   background-color: #707070;
   background-image: url(../img/Salad2.jpg);
-  background-position: 0 -82px;
+  background-position: 0 -40px;
   background-repeat: no-repeat;
   color: #707070;
   box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.7)
@@ -420,8 +452,8 @@ input:checked +.premade-lbl-toggle {
 
   color: #fff;
   background-image: url(../img/Salad2.jpg);
-  background-size: 360px;
-  background-position: 0 -82px;
+  background-size: 100%;
+  background-position: 0 -40px;
   background-repeat: no-repeat;
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
@@ -443,13 +475,21 @@ input:checked +.premade-lbl-toggle {
 
 /* about us */
 
+
 .aboutimg {
-	width: 320px;
-	height: 150px;
-	margin-top: 50px;
+  min-height: 150px;
+	width: 100%;
+  height: auto;
 	background-image: url(../img/about.jpg);
-	background-size: 440px;
-	background-position: -100px -40px;
+	background-size: 120%;
+  background-position: -50px -40px;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+}
+
+.aboutustext {
+  width: 93%;
+  margin: 0 auto;
 }
 
 /* about us end */
@@ -458,13 +498,15 @@ input:checked +.premade-lbl-toggle {
 
 /* contact us */
 
-.contact {
+#contact {
+  margin: 0 auto;
 	margin-top: 50px;
-	width: 320px;
+	width: 93%;
 }
 
 .formholder {
-	width: 320px;
+	width: 98%;
+  margin: 0 auto;
 }
 
 .form {
@@ -485,9 +527,10 @@ input:checked +.premade-lbl-toggle {
 
 input[type="email" i], [type="text" i], textarea {
     border: 1px solid #ddd;
-    margin: 10px 0 0 13px;
+    margin: 0 auto;
+    margin-top: 10px;
     resize: none;
-    width: 93%;
+    width: 100%;
     padding: 10px 0 10px 0;
     line-height: 0px;
 }
@@ -503,16 +546,15 @@ input[type=submit] {
 	border-radius: 2px;
 	cursor: pointer;
 	float: right;
-	margin-right: 13px;
 }
 
 
 .social {
-	width: 90%;
+	width: 93%;
 	height: 130px;
+  margin: 0 auto;
 	margin-top: 120px;
 	margin-bottom: 30px;
-  margin-left: 18px;
 	display: grid;
 	grid-template-columns: 30px 235px;
   grid-column-gap: 20px;
@@ -556,11 +598,65 @@ input[type=submit] {
 }
 
 
-
-/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .topnav a {
-    float: none;
-    width: 100%;
+/* Media Queries */
+/* On screens that are 600px wide or more, make menu into 3 colums */
+@media screen and (min-width: 600px) {
+  .wrap-collapsible {
+    float: left;
+    width: 28.5%;
+    padding-right: 3.6%;
   }
 }
+
+@media screen and (min-width: 600px) {
+  #drinks, #food {
+    height: 900px;
+    min-height: 425px;
+    margin-left: 7.5%;
+  }
+
+@media screen and (min-width: 600px) {
+#aboutus, #contact  {
+  display: grid;
+  grid-template-columns: 58.6% 28.6%;
+    grid-column-gap: 5.3%;
+  margin-left: 7.5%;
+}
+
+
+@media screen and (min-width: 600px) {
+  .header {
+    width: 100%;
+    height: 810px;
+    background-size: 100%;
+    background-position: 0 -300px;
+    color: white;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .overlay {
+    width: 100%;
+    height: 810px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 1.0));
+    color: white;
+    position: absolute;
+    margin: 0 auto;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .clogo {
+    margin-left: 7.5%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .collapsible-menu {
+    margin-right: 7.5%;
+  }
+}
+
