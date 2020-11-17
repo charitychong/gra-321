@@ -610,8 +610,15 @@ input[type=submit] {
 }
 
 @media screen and (min-width: 600px) {
-  #drinks, #food {
+  #drinks {
     height: 900px;
+    min-height: 425px;
+    margin-left: 7.5%;
+  }
+
+  @media screen and (min-width: 600px) {
+  #food {
+    height: 550px;
     min-height: 425px;
     margin-left: 7.5%;
   }
@@ -661,3 +668,8 @@ input[type=submit] {
   }
 }
 
+@media screen and (min-width: 600px) {
+  .collapsible-content {
+    overflow: visible;
+  }
+}
